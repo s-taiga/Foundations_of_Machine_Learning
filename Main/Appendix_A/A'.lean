@@ -122,5 +122,7 @@ theorem holder_inequality {p q : ℝ≥0∞} (hpq : p.toReal.IsConjugateExponent
     -- simp [div_le_iff (by norm_num) this]
     sorry
 
+theorem cauchy_schwarz_inequality_in_lib (x y : ℍ) : ‖⟪x, y⟫‖ ≤ ‖x‖ * ‖y‖ := norm_inner_le_norm x y
+
 
 end
